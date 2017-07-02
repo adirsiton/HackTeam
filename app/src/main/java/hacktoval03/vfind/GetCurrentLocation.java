@@ -21,6 +21,7 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -46,7 +47,6 @@ public class GetCurrentLocation extends Activity
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_current_gps_location);
-
 
         //if you want to lock screen for always Portrait mode
         setRequestedOrientation(ActivityInfo
